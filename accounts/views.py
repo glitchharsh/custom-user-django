@@ -28,7 +28,7 @@ class UsernameOrEmailUserSignUpView(CreateView):
     success_url = reverse_lazy("login")
     template_name = "registration/signup.html"
 
-class ProfileView(DetailView, LoginRequiredMixin):
+class ProfileView(LoginRequiredMixin, DetailView):
     model_class = get_user_model()
     template_name = 'profile.html'
 

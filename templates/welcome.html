@@ -4,13 +4,43 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-  Hi {{ user.username }}! Welcome to this brilliant example of an authentication app with cutting edge features.
-  Wanna try them?
-  <p><a href="{% url 'profile' %}">Profile</a></p>
-  <p><a href="{% url 'logout' %}">Log Out</a></p>
+<div class="header-bar">
+    <h1>Hi {{ user.username }}!</h1>
+</div>
+
+<div class="detail">
+    <p>Welcome to this brilliant example of an authentication app with cutting edge features.</p>
+    <p>Wanna try them?</p>
+</div>
+    
+<div class="task-items-wrapper">
+    <div class="task-wrapper">
+        <div class="task-title">
+            <a href="{% url 'profile' %}">Profile</a>
+        </div>
+    </div>
+</div>
+
+<div class="footer-bar">
+    <div class="task-title">
+        <a href="{% url 'logout' %}">Log Out</a>
+    </div>
+</div>
 {% else %}
-  <p>You are not logged in. You might be missing out!</p>
-  <a href="{% url 'login' %}">Log In</a> |
-  <a href="{% url 'signup' %}">Sign Up</a>
+
+<div class="header-bar">
+    <h1>Welcome!</h1>
+</div>
+  
+<div class="detail">
+    You are not logged in. You might be missing out!
+</div>
+
+<div class="footer-bar">
+    <div class="task-title">
+        <a href="{% url 'login' %}">Log In</a> &nbsp;&nbsp; Or
+        <a href="{% url 'signup' %}">Sign Up</a>
+    </div>
+</div>
 {% endif %}
 {% endblock %}
