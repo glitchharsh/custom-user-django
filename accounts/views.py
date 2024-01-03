@@ -15,7 +15,7 @@ class UsernameOrEmailUserLoginView(LoginView):
         username = request.POST.get('username')
         if '@' in username:
             username_qs = get_user_model().objects.filter(email = username)
-            if len(username) != 0:
+            if len(username_qs) != 0:
                 username = username_qs.first().username
                 request.POST._mutable = True
                 request.POST['username'] = username
