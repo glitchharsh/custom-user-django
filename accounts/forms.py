@@ -1,6 +1,10 @@
-from django.contrib.auth.forms import UserCreationForm, UserChangeForm
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm, AuthenticationForm
+from django import forms
 
 from .models import UsernameOrEmailUser
+
+class UsernameOrEmailUserLoginForm(AuthenticationForm):
+    username = forms.CharField(label='Email / Username')
 
 class UsernameOrEmailUserCreationForm(UserCreationForm):
 
