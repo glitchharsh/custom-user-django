@@ -84,4 +84,7 @@ python manage.py runserver
 5. Visit [localhost:8000](https://localhost:8000) in browser to access the application.
 
 6. ## Project Walkthrough Video
-[Link to the video](https://auth.harshp.in)
+   
+[Link to the video](https://www.loom.com/share/ba792070e7424fe5b837f1acf73ba1e8?sid=291afd89-6be0-43e0-a1c1-63bb62e6fae1)
+
+The video came out to be longer than expected. Please watch it at 1.5x or 2x speed.
