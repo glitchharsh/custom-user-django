@@ -1,14 +1,14 @@
 # User Authentication with Email OR Username in Django
 
 This is a simple Django web application that provides user authentication using both username and email.
-#### Deployment - [auth.harshp.in](auth.harshp.in)
+#### Deployment - [auth.harshp.in](https://auth.harshp.in)
 
 ## Table of Contents
 
 - [Objective](#objective)
 - [Requirements](#requirements)
 - [Additional Notes](#additional-notes)
-- [Submission](#submission)
+- [New Features](#new-features-implemented)
 - [Setup and Run](#setup-and-run)
 - [Project Walkthrough Video](#project-walkthrough-video)
 
@@ -44,7 +44,7 @@ Create a Django web application with user authentication features, including use
 
 - [x] Implemented Forgot Password and Change Password Features using features provided in the Django Contrib.
 - [x] Implemented SMTP Email Backend to send an email for Forgot Password.
-- [x] Deployed the project to [auth.harshp.in](auth.harshp.in) with a PostgreSQL database using the deployment branch.
+- [x] Deployed the project to [auth.harshp.in](https://auth.harshp.in) with a PostgreSQL database using the deployment branch.
   
 ## Setup and Run
 
@@ -60,8 +60,8 @@ source venv/bin/activate (Linux)
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/django-user-authentication.git
-cd django-user-authentication
+git clone git@github.com:glitchharsh/custom-user-django.git
+cd custom-user-django
 ```
 2. Install dependencies:
 
@@ -84,4 +84,4 @@ python manage.py runserver
 5. Visit [localhost:8000](https://localhost:8000) in browser to access the application.
 
 6. ## Project Walkthrough Video
-[Link to the video](auth.harshp.in)
+[Link to the video](https://auth.harshp.in)
